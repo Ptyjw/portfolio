@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oUYA's Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .img-thumbnail {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            padding-bottom: 10px;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        .card-body {
+            transition: background 0.3s, transform 0.3s;
+        }
+        .card-body:hover {
+            background: #e0e0e0;
+            transform: translateY(-5px);
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>oUYA</h1>
+        <!-- Toggle button for offcanvas -->
+        <button class="btn btn-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            Menu
+        </button>
+    </header>
+
+    <!-- Offcanvas navigation -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#biography">Biography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-info">Contact Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#social-media">Social Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio/Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-experience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <section id="biography" class="text-center">
+            <h2>Biography</h2>
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fred_velvet%2Fcomments%2Fz9fc3z%2F221201_seulgi_instagram_update%2F&psig=AOvVaw3VC0ymDzGKlhA4jXnxkrZg&ust=1718677489914000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIj-xtzK4YYDFQAAAAAdAAAAABAE" alt="Profile Photo" class="img-thumbnail">
+            <p>Freshman</p>
+        </section>
+
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Email: pzworkoy06@gmail.com</p>
+                    <p>Phone: 123123123</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-media">
+            <h2>Social Media</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/hi_sseulgi/">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio/Projects</h2>
+            <div class="row">
+                <div class="col-md-6 portfolio-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">FRC 6998</h5>
+                            <p class="card-text">Monterey Bay Regional: Regional Engineering Inspiration Award, Regional Winners</p>
+                            <a href="https://frc-events.firstinspires.org/team/6998" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 portfolio-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">FIRST Championship</h5>
+                            <p class="card-text">FIRST Robotics Competition - Curie Division: Industrial Design Award</p>
+                            <a href="https://www.firstchampionship.org/" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>Violin</li>
+                        <li>Programming</li>
+                        <li>Pipecleaner flowers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Currently a freshman</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Worked at PTTA</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="row gallery justify-content-center">
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 5" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 6" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 7" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 8" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 9" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-lg-2" style="margin: 10px;">
+                    <img src="https://via.placeholder.com/150" alt="Gallery Image 10" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="my-ideas">
+        <h2>My Ideas</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Violin Performance</h5>
+                        <p class="card-text">Learn how to perform beautiful pieces of music.</p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary">Watch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pipecleaner Flowers</h5>
+                        <p class="card-text">Learn how to create beautiful and unique pipecleaner flowers.</p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 oUYA</p>
+    </footer>
+
+    <!-- Bootstrap JS bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
